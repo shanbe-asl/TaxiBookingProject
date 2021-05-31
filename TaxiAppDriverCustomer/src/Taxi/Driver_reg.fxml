@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="600.0" style="-fx-background-color: #f4f1de;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Taxi.Driver_controller">
+   <top>
+      <Label alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" prefHeight="27.0" prefWidth="601.0" text="Fill out the information form" textAlignment="JUSTIFY" textFill="#3d405b" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #3d405b;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="150.0" text="Full Name" textFill="#f4f1de">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font></Label>
+                  <TextField fx:id="fname" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: #f2cc8f;" />
+               </children>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="150.0" text="Age" textFill="#f4f1de">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font></Label>
+                  <TextField fx:id="age" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: #f2cc8f;" />
+               </children>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="150.0" text="Phone Number" textFill="#f4f1de">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font></Label>
+                  <TextField fx:id="phnum" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: #f2cc8f;" />
+               </children>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="150.0" text="Car Model" textFill="#f4f1de">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font></Label>
+                  <TextField fx:id="carmodel" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: #f2cc8f;" />
+               </children>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="150.0" text="Number of Seats" textFill="#f4f1de">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font></Label>
+                  <Slider fx:id="sliderseat" onMouseDragReleased="#numseats" prefHeight="30.0" prefWidth="300.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox minHeight="-Infinity" prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="150.0" text="Date of Travel" textFill="#f4f1de">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font></Label>
+                  <DatePicker fx:id="datedr" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: #f2cc8f;" />
+               </children>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox minHeight="-Infinity" prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="150.0" text="Destination" textFill="#f4f1de">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font></Label>
+                  <ChoiceBox fx:id="destinationBox" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: #f2cc8f;" />
+               </children>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="48.0" prefWidth="584.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#submitBtn" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #81b29a;" text="Submit" textFill="#3d405b">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#resetBtn" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #81b29a;" text="Reset" textFill="#3d405b">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER_RIGHT" maxWidth="50.0" mnemonicParsing="false" onAction="#homeBtn" prefHeight="50.0" style="-fx-background-color: #81b29a;" text="Home" textFill="#3d405b">
+               <HBox.margin>
+                  <Insets left="310.0" top="3.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+</BorderPane>
